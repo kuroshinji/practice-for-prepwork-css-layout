@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <title>Favorite Programming Language</title>
+    </head>
+    <body>
+        <h1 class="Title">Favorite Programming Language</h1>
+        <form action="/form-handlng-url" method="post">
+            <fieldset class="set1">
+                <legend class="user">add user</legend>
+
+                <div class="first">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="first_name" class="firstInput">
+                </div>
+
+                <div class="last">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="last_name" class="lastInput">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_address" class="emailInput">
+                </div>
+
+                <fieldset class =set2>
+                    <div class="status">
+                        <label for="status">Status:</label>
+                        <select id="status" name="user_status" class="stat">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="currentDate">Date:</label>
+                        <input type="date" id="currentDate" name="current_date" class="dateStamp">
+                    </div>
+                </fieldset>
+
+                <!--<p>
+                    Choose your favorite programming language:
+                </p>-->
+
+                <div>
+                    <fieldset class="language">
+                        <legend>Choose your favorite language:</legend>
+
+                        <div class="html">
+                            <input type="radio" id="html" name="html_code">
+                            <label for="html">HTML</label>
+                        </div>
+
+                        <div class="css">
+                            <input type="radio" id="css" name="css_code">
+                            <label for="css">CSS</label>
+                        </div>
+
+                        <div class="js">
+                            <input type="radio" id="javascript" name="js_code">
+                            <label for="javascript">JS</label>
+                        </div>
+
+                        <div class="python">
+                            <input type="radio" id="python" name="python_code">
+                            <label for="python">Python</label>
+                        </div>
+
+                        <div class="c">
+                            <input type="radio" id="c" name="c_code">
+                            <label for="c">C/C++/C#</label>
+                        </div>
+
+                        <div class="other">
+                            <input type="radio" id="other" name="others">
+                            <label for="other">Other</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="comment">
+                    <label for="comment" class="commentLabel">Comments:</label>
+                    <textarea style="resize: none;" id="comment" name="comment" maxlength="100"></textarea>
+                </div>
+                <fieldset class="set3">
+                    <div>
+                        <input type="checkbox" id="signUp" name="sign_up" class="check1">
+                        <label for="signUp" class="sign">Sign up for News</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="agreeToTerms" name="agree_to_terms" class="check2">
+                        <label for="agreeToTerms" class="terms">Agree to Terms</label>
+                    </div>
+                </fieldset>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
